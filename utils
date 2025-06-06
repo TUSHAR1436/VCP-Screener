@@ -1,0 +1,18 @@
+
+import pandas as pd
+
+def fetch_all_nse_data():
+    # Simulated stock data (normally fetched from NSE API or Yahoo Finance)
+    data = {
+        'symbol': ['RELIANCE', 'TCS', 'INFY', 'HDFCBANK'],
+        'close': [3000, 3500, 1400, 1600],
+        'volume': [200000, 180000, 150000, 250000],
+        'atr_14': [45, 55, 20, 35],
+        'atr_14_10d_ago': [50, 60, 25, 40],
+        'ema_50': [2950, 3450, 1350, 1580],
+        'ema_150': [2900, 3400, 1300, 1560],
+        'ema_200': [2850, 3350, 1250, 1500],
+        '52w_high': [4000, 4200, 1800, 2000],
+    }
+    df = pd.DataFrame(data)
+    return df
